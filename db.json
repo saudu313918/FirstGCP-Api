@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "productName": "Fridge",
+      "productDescription": "Home",
+      "productRate": "1200",
+      "productQuantity": "500"
+    },
+    {
+      "id": 3,
+      "productName": "Mango",
+      "productDescription": "Friut",
+      "productRate": "160",
+      "productQuantity": "1000"
+    },
+    {
+      "id": 4,
+      "productName": "Faluda",
+      "productDescription": "Food",
+      "productRate": "546",
+      "productQuantity": "50"
+    },
+    {
+      "id": 5,
+      "productName": "Tuborg",
+      "productDescription": "Beer",
+      "productRate": "200",
+      "productQuantity": "5768"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
