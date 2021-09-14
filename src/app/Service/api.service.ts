@@ -9,7 +9,7 @@ export class ApiService {
   constructor( private http : HttpClient) { }
 
   // API Address for the communication with backend
- $baseUrl = "localhost:8080/api/v1/";
+ //  $baseUrl = "localhost:8080/api/v1/";
   // API List
   // Post Data Of The Product
 
