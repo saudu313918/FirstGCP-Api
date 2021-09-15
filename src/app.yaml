@@ -1,4 +1,9 @@
-runtime: nodejs
-env: flex
-manual_scaling:
- instances: 2
+# [START runtime]
+runtime: nodejs10
+handlers:
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+- url: /
+  static_dir: dist
+# [END runtime]
