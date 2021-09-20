@@ -14,7 +14,7 @@ export class ApiService {
   // Post Data Of The Product
 
   postProduct(value : any){
-    return this.http.post<any>('http://localhost:3000/posts', value)
+    return this.http.post<any>('http://localhost:8080/posts', value)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -22,7 +22,7 @@ export class ApiService {
 
   // Get Product Details from backend
   getProduct(){
-    return this.http.get<any>('http://localhost:3000/posts')
+    return this.http.get<any>('http://localhost:8080/posts')
     .pipe(map((res : any)=>{
       return res;
     }))
@@ -30,7 +30,7 @@ export class ApiService {
 
   //Edit the product details By ID
   updateProduct(value : any, id:number){
-    return this.http.put<any>('http://localhost:3000/posts/' +  id,value)
+    return this.http.put<any>('http://localhost:8080/posts/' +  id,value)
     .pipe(map((res : any)=>{
       return res;
     }))
@@ -38,7 +38,7 @@ export class ApiService {
 
   // Delete the product by ID
   deleteProduct(id : number){
-    return this.http.delete<any>('http://localhost:3000/posts/' + id)
+    return this.http.delete<any>('http://localhost:8080/posts/' + id)
     .pipe(map((res : any)=>{
       return res;
     }))

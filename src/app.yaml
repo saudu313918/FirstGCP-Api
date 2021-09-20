@@ -1,9 +1,17 @@
-# [START runtime]
-runtime: nodejs10
-handlers:
-- url: /
-  static_files: dist/index.html
-  upload: dist/index.html
-- url: /
-  static_dir: dist
-# [END runtime]
+# # [START runtime]
+# runtime: nodejs10
+# handlers:
+# - url: /
+#   static_files: dist/index.html
+#   upload: dist/index.html
+# - url: /
+#   static_dir: dist
+# # [END runtime]
+
+
+#app.yaml
+ runtime: nodejs
+ manual_scaling:
+   instances: 5
+ service: angular
+ env: flex
